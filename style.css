@@ -123,3 +123,86 @@ background: #385170;
 
  }
  
+
+ /* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Tablets & small laptops */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .answer {
+    width: 100%;
+  }
+
+  .word {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  html, body {
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .letters {
+    width: 35px;
+    font-size: 20px;
+  }
+
+  .hint p,
+  .incorrect-guess p {
+    font-size: 16px;
+  }
+
+  .buttons {
+    padding-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 16px;
+    margin: 4px;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  #result-screen {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  #result-screen h2 {
+    font-size: 22px;
+  }
+}
